@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 60 11% 98%;
+    --foreground: 0 0% 19%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 19%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 19%;
+    --primary: 230 76% 50%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 60 5% 94%;
+    --secondary-foreground: 0 0% 19%;
+    --muted: 60 5% 94%;
+    --muted-foreground: 0 0% 42%;
+    --accent: 60 5% 94%;
+    --accent-foreground: 0 0% 19%;
+    --destructive: 0 72% 45%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 60 5% 87%;
+    --input: 60 5% 78%;
+    --ring: 230 76% 50%;
+    --radius: 0rem;
+    --sidebar-background: 230 76% 50%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 0 0% 100%;
+    --sidebar-primary-foreground: 230 76% 50%;
+    --sidebar-accent: 231 77% 44%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 231 70% 42%;
+    --sidebar-ring: 0 0% 100%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+  ::selection {
+    background: hsl(var(--primary));
+    color: hsl(var(--primary-foreground));
+  }
+}
+
+@layer components {
+  .micro-label {
+    @apply font-mono text-[11px] font-medium uppercase tracking-[0.14em];
+  }
+  .hairline-table {
+    border-collapse: collapse;
+  }
+  .hairline-table th,
+  .hairline-table td {
+    @apply border border-border;
+  }
+}
