@@ -102,3 +102,12 @@ How it works on Vercel: `vite build` produces the static site in `dist/public`; 
 
 - One admin account, configured through environment variables (no user management UI).
 - No login rate limiting beyond a short delay on failed attempts; use a strong `ADMIN_PASSWORD`.
+
+## 🚀 Live Demo
+
+<p align="center">
+  <a href="https://future-fs-02-flax-phi.vercel.app/" target="_blank">
+    <img src="https://img.shields.io/badge/🚀%20LIVE%20DEMO-Click%20Here-brightgreen?style=for-the-badge" alt="Live Demo"/>
+  </a>
+</p>
+
